@@ -139,7 +139,7 @@ class PlayList {
      *  does nothing and returns -1. */
     public void remove(int i) { // the algorithem for removig will be simple..
      
-      if(i==size-1)//in this case we should remove the last track
+       if(i==size-1)//in this case we should remove the last track
       {
         tracks[i]=null;
       }
@@ -156,9 +156,9 @@ class PlayList {
            tracks[j+1]=temp;
 
         }
-        tracks[size-1]=null;
         size--;
       }
+    
 
         //// replace this comment with your code
     }
