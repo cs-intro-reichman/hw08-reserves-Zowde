@@ -49,6 +49,7 @@ class PlayList {
     //// For an efficient implementation, use StringBuilder.
     public String toString() {
        StringBuilder sb=new StringBuilder();
+       sb.append("\n");
        for(int i=0;i<size;i++)//running on the playlist
        {
           sb.append(tracks[i].toString());
