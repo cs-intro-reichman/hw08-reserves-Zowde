@@ -144,7 +144,7 @@ class PlayList {
         tracks[i]=null;
       }
       //else make a copy of the tracks after the chosen track
-      else
+      else if(size!=0&&i>=0&&i<=size)
       {
          Track temp=tracks[i];
         for(int j=i;j<tracks.length;j++)
