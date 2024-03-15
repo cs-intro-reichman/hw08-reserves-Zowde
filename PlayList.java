@@ -246,6 +246,10 @@ class PlayList {
     /** Returns the title of the shortest track in this list. 
      *  If the list is empty, returns null. */
     public String titleOfShortestTrack() {
+         if(size==0)//the list is empty
+        {
+             return null;
+        }
         return tracks[minIndex(0)].getTitle();
     }
 
