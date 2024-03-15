@@ -140,9 +140,10 @@ class PlayList {
      *  does nothing and returns -1. */
     public void remove(int i) { // the algorithem for removig will be simple..
      
-      if(i==size-1)//in this case we should remove the last track
+      if(i == size-1)//in this case we should remove the last track
       {
         tracks[i]=null;
+        
       }
       //else make a copy of the tracks after the chosen track
       else if(size!=0&&i>=0&&i<=size)
@@ -157,9 +158,9 @@ class PlayList {
            tracks[j+1]=temp;
 
         }
-        size--;
+       
       }
-    
+     size--;
 
         //// replace this comment with your code
     }
@@ -226,6 +227,11 @@ class PlayList {
      */
     private int minIndex(int start) {
         //// replace the following statement with your code
+  
+    if(start <= -1 || start >= size)
+    {
+        return -1;
+    }  
     int sduration=tracks[start].getDuration(),index=start;
     for(int i=start+1;i<size;i++)
     { 
